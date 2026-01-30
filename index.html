@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="theme-toggle">
+      <span class="theme" title=""> 🌙 </span>
+    </button>
+    <main>
+      <div class="message-area"></div>
+      <header class="header">
+        <h2><span>&lt;</span> Health care <span>/&gt;</span></h2>
+        <button class="demandes-btn">les demandes &rarr;</button>
+        <button class="ajouter-demande-btn hide">
+          ajouter une demande &rarr;
+        </button>
+      </header>
+      <section class="section--1">
+        <img src="/image.png" alt="" />
+        <div>
+          <h3>Ajouter une demande</h3>
+          <form action="" class="add-form">
+            <div class="form-group">
+              <label for="nom">nom</label>
+              <input required type="text" id="nom" />
+            </div>
+            <div class="form-group">
+              <label for="prenom">prenom</label>
+              <input required type="text" id="prenom" />
+            </div>
+            <div class="form-group">
+              <label for="telephone">telephone</label>
+              <input required type="tel" id="telephone" />
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input required type="email" id="email" />
+            </div>
+            <div class="form-group">
+              <label for="motif">motif</label>
+              <select name="" id="motif">
+                <option value="consultation">consultation</option>
+                <option value="visit">visit</option>
+                <option value="urgence">urgence</option>
+                <option value="controle">controle</option>
+              </select>
+              <!-- <input required type="text" id="motif" /> -->
+            </div>
+            <div class="form-group">
+              <label for="date suhaitee">date suhaitee</label>
+              <input required type="date" class="date" id="date suhaitee" />
+            </div>
+            <button type="submit">confirmer</button>
+          </form>
+        </div>
+      </section>
+      <section class="section--2 hide">
+        <div class="heading-container">
+          <h3>Tous les demandes</h3>
+
+          <select class="filter-select" name="" id="">
+            <option value="" selected disabled>Choisir une option</option>
+          </select>
+        </div>
+        <table>
+          <thead>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>telephone</th>
+            <th>email</th>
+            <th>motif</th>
+            <th>date souhaitee</th>
+            <th>actions</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="pagination-container">
+          <p class="counter">counter result</p>
+          <div class="pagination">
+            <button class="pagination-btn prev">&larr; prev</button>
+            <span class="pagination-result"> result </span>
+            <button class="pagination-btn next">next &rarr;</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
